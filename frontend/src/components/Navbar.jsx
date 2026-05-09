@@ -20,7 +20,7 @@ const Navbar = () => {
 
   // Auth state
   const [isLoggedIn, setIsLoggedIn] = useState(
-    Boolean(localStorage.getItem("authtoken")),
+    Boolean(localStorage.getItem("authToken")),
   );
 
   // Mobile menu ref

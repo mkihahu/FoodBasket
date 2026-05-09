@@ -38,7 +38,7 @@ const BannerHome = ({ onSearch }) => {
             <div className={bannerStyles.tag}>
               <span className="flex items-center text-sm sm:text-base">
                 <FiTruck className="mr-2" /> Free delivery on orders over KSh.
-                500
+                50k
               </span>
               <h1 className={bannerStyles.heading}>
                 Fresh{" "}

@@ -1,4 +1,3 @@
-import React from "react";
 import { footerStyles } from "../assets/dummyStyles";
 import {
   FaApplePay,
@@ -89,7 +88,7 @@ const Footer = () => {
               {["Home", "Shop", "Contact"].map((item, idx) => (
                 <li key={idx}>
                   <a
-                    href={`/${item.toLowerCase()}`}
+                    href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                     className={footerStyles.linkItem}
                   >
                     <span className={footerStyles.linkBullet}></span>
@@ -127,7 +126,7 @@ const Footer = () => {
                   <FaEnvelope className={footerStyles.contactIcon} />
                 </div>
                 <div>
-                  <p>contact@farmbasket.com</p>
+                  <p>contact@foodbasket.com</p>
                 </div>
               </li>
             </ul>
